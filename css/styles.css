@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import 'partials/partials.css';
+@import 'components/components.css';
+
+@font-face {
+  font-family: 'Roboto-Mono';
+  src: url('../assets/fonts/RobotoMono-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+:root {
+  --color-blur: rgb(241 245 249 / 0.8);
+  --color-active: rgb(241 245 249);
+  --color-inactive: rgb(241 245 249 / 0.3);
+}
+
+body {
+  background: linear-gradient(#134e4a, #155e75);
+  color: #fff;
+  font-family: 'Roboto-Mono', sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+main {
+  min-height: 100%;
+  flex: 1;
+}
+
+.main__container {
+  min-height: 100%;
+  margin: 1rem;
+}
+
+.main__container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}

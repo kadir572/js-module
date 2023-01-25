@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@3.1.8/src/css/preflight.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages/slider.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="js/slider.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <span><a href="index.html">JsModule</a></span>
+    </header>
+    <div class="container">
+      <div class="sidenav">
+        <nav>
+          <hr />
+          <div>
+            <a href="index.html"
+              ><i class="fa-solid fa-house"></i><span>Homepage</span></a
+            >
+          </div>
+          <hr />
+          <div>
+            <span>Apps</span>
+            <a href="slider.html" class="active"
+              ><i class="fa-solid fa-image"></i><span>Image Slider</span></a
+            >
+            <a href="form.html"
+              ><i class="fa-solid fa-check-to-slot"></i
+              ><span>Form Validation</span></a
+            >
+            <a href="blog.html"
+              ><i class="fa-solid fa-share"></i><span>Blog</span></a
+            >
+          </div>
+          <hr />
+        </nav>
+      </div>
+      <main>
+        <div class="main__container">
+          <h1>Image Slider</h1>
+          <div class="slider__container">
+            <div class="image__container">
+              <img
+                class="image"
+                src="https://via.placeholder.com/500x350?text=First"
+                alt=""
+              />
+            </div>
+            <div class="button__container">
+              <button class="btn btn-controls btn-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <div class="image-index__container"></div>
+              <button class="btn btn-controls btn-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <button class="btn btn-controls btn-media-control">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <span
+        >Icons made by&nbsp;<a target="_blank" href="https://fontawesome.com/"
+          >Font Awesome</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>

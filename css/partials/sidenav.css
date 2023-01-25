@@ -1,0 +1,43 @@
+.sidenav {
+  min-height: 100%;
+  width: 15rem;
+}
+
+.sidenav nav {
+  margin: 0.5rem 1rem;
+  color: var(--color-blur);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav nav > div {
+  margin-block: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidenav nav > div > span {
+  margin-bottom: 0.5rem;
+}
+
+.sidenav hr {
+  color: var(--color-inactive);
+}
+
+.sidenav a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.sidenav i {
+  font-size: 1.2rem;
+}
+
+.active {
+  color: var(--color-active);
+}

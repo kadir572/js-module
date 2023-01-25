@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@3.1.8/src/css/preflight.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/pages/form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="js/form.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <span><a href="index.html">JsModule</a></span>
+    </header>
+    <div class="container">
+      <div class="sidenav">
+        <nav>
+          <hr />
+          <div>
+            <a href="index.html"
+              ><i class="fa-solid fa-house"></i><span>Homepage</span></a
+            >
+          </div>
+          <hr />
+          <div>
+            <span>Apps</span>
+            <a href="slider.html"
+              ><i class="fa-solid fa-image"></i><span>Image Slider</span></a
+            >
+            <a href="form.html" class="active"
+              ><i class="fa-solid fa-check-to-slot"></i
+              ><span>Form Validation</span></a
+            >
+            <a href="blog.html"
+              ><i class="fa-solid fa-share"></i><span>Blog</span></a
+            >
+          </div>
+          <hr />
+        </nav>
+      </div>
+      <main>
+        <div class="main__container">
+          <h1>Form Validation</h1>
+          <form class="form">
+            <div class="form-control">
+              <label for="title">Title</label>
+              <select class="form__title" name="title" id="title">
+                <option value=""></option>
+                <option value="mr">Mr</option>
+                <option value="ms">Ms</option>
+                <option value="mrs">Mrs</option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                class="form__name"
+                type="text"
+                name="name"
+                id="name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-control">
+              <label for="surname">Surname</label>
+              <input
+                class="form__surname"
+                type="text"
+                name="surname"
+                id="surname"
+                autocomplete="no"
+              />
+            </div>
+            <div class="form-control">
+              <label for="address">Address</label>
+              <input
+                class="form__address"
+                type="text"
+                name="address"
+                id="address"
+                autocomplete="no"
+              />
+            </div>
+            <div class="form-control">
+              <label for="zipcode">ZIP Code</label>
+              <input
+                class="form__zip"
+                type="number"
+                name="zipcode"
+                id="zipcode"
+                autocomplete="no"
+              />
+            </div>
+            <div class="form-control">
+              <label for="location">Location</label>
+              <input
+                class="form__location"
+                type="text"
+                name="location"
+                id="location"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                class="form__email"
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="no"
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                class="form__message"
+                name="message"
+                id="message"
+                autocomplete="no"
+              ></textarea>
+            </div>
+            <span class="form__required">* required field</span>
+            <button class="btn btn-primary btn-submit" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <span
+        >Icons made by&nbsp;<a target="_blank" href="https://fontawesome.com/"
+          >Font Awesome</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>

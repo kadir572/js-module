@@ -1,0 +1,8 @@
+header {
+  padding: 0.5rem 1rem;
+}
+
+header span {
+  font-size: 2rem;
+  font-weight: 600;
+}
