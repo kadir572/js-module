@@ -41,3 +41,16 @@
 .active {
   color: var(--color-active);
 }
+
+@media (max-width: 800px) {
+  .sidenav {
+    width: 5rem;
+  }
+  .sidenav nav > div > a > span {
+    display: none;
+  }
+
+  .sidenav nav > div {
+    gap: 2rem;
+  }
+}

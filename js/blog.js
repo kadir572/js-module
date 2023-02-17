@@ -29,10 +29,10 @@ const createPost = singlePost => {
   const post = document.createElement('article')
   post.classList.add('post')
   const title = document.createElement('h2')
-  title.textContent = `Title: ${singlePost.title}`
+  title.textContent = `${singlePost.title}`
   post.appendChild(title)
   const body = document.createElement('p')
-  body.textContent = `Body: ${singlePost.body}`
+  body.textContent = `${singlePost.body.substring(150, 0)}...`
   post.appendChild(body)
   return post
 }
