@@ -103,7 +103,13 @@
 .btn-media-control {
   position: absolute;
   right: 0;
-  top: -3rem;
+  top: -4rem;
+  font-size: 2rem;
+}
+
+.btn-next,
+.btn-prev {
+  font-size: 1.6rem;
 }
 
 .image-index__container {

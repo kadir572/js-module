@@ -1,20 +1,50 @@
 .posts {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem;
-  max-width: 50rem;
+  justify-content: center;
 }
 
 .post {
+  position: relative;
   border: 1px solid #fff;
-  border-radius: 12px;
+  border-radius: 9px;
   padding: 1rem 2rem;
+  max-width: 25rem;
+  height: 20rem;
 
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+.post__header {
+  min-height: 3rem;
+}
+
+.post__body {
+  margin-bottom: auto;
+}
+
+.post__footer {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.post__image__frame {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.post__header img {
+  max-height: 50px;
+}
+
 .post h2 {
   font-weight: 600;
+  width: 70%;
 }

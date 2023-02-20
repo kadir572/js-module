@@ -72,6 +72,7 @@ const setMediaBtn = type => {
       addClass: 'btn-play',
       removeClass: 'btn-pause',
       iconClass: 'fa-play',
+      ariaLabel: 'play-button',
       isPlaying: false,
       intervalFn: clearSliderInterval,
     },
@@ -79,6 +80,7 @@ const setMediaBtn = type => {
       addClass: 'btn-pause',
       removeClass: 'btn-play',
       iconClass: 'fa-pause',
+      ariaLabel: 'pause-button',
       isPlaying: true,
       intervalFn: setSliderInterval,
     },
@@ -89,11 +91,13 @@ const setMediaBtn = type => {
     removeClass,
     isPlaying: shouldPlay,
     iconClass,
+    ariaLabel,
     intervalFn,
   } = mediaBtnOptions[type]
 
   mediaBtn.classList.remove(removeClass)
   mediaBtn.classList.add(addClass)
+  mediaBtn.ariaLabel = ariaLabel
   mediaBtnIcon.classList.remove('fa-play')
   mediaBtnIcon.classList.remove('fa-pause')
   mediaBtnIcon.classList.add(iconClass)

@@ -43,3 +43,15 @@ main {
   font-size: 2rem;
   font-weight: 600;
 }
+
+@media (max-width: 28.125em) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 23.75em) {
+  :root {
+    font-size: 12px;
+  }
+}
